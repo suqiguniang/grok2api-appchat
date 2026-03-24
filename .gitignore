@@ -1,0 +1,14 @@
+target/
+.DS_Store
+
+data/config.toml
+data/token.json
+data/*.bak
+data/*.auto-bak-*
+data/imagine_nsfw_state.json
+
+.env
+.env.*
+
+*.log
+*.tgz

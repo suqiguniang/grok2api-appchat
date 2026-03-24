@@ -1,0 +1,13 @@
+services:
+  grok2api-appchat:
+    image: ${IMAGE:-grok2api-appchat:latest}
+    container_name: grok2api-appchat
+    restart: unless-stopped
+    ports:
+      - "${SERVER_PORT:-8000}:8000"
+    environment:
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: 8000
+      RUST_LOG: ${RUST_LOG:-info}
+    volumes:
+      - ./data:/app/data
