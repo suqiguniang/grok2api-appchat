@@ -20,7 +20,7 @@ imagine_max_retries = 5
 
 [app]
 app_url = "http://127.0.0.1:8000"
-app_key = "change-me"
+app_key = "123456"
 api_key = ""
 image_format = "url"
 video_format = "url"
